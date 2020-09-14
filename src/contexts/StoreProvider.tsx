@@ -3,11 +3,11 @@ import { useLocalStore } from 'mobx-react';
 import { RootStore } from '../stores/RootStore';
 import { CounterStore } from '../stores/CounterStore';
 
-interface StoreContextProps {
+export interface StoreContextProps {
   counterStore: CounterStore;
 }
 
-const StoreContext = createContext<StoreContextProps | null>(null);
+export const StoreContext = createContext<StoreContextProps | null>(null);
 
 const createStores = () => (): StoreContextProps => {
   const rootStore = new RootStore();

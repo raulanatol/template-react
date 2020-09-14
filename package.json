@@ -28,6 +28,8 @@
     "extends": "@cowcoders/eslint-config/react"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "emotion": "^10.0.27",
     "mobx": "^5.15.6",
     "mobx-react": "^6.3.0",
     "react": "^16.13.1",

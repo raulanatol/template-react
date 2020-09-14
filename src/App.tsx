@@ -1,29 +1,20 @@
 import './App.css';
-import logo from './logo.svg';
 import React from 'react';
-import { AppProviders } from './contexts/AppProviders';
 import { Counter } from './components/Counter';
+import { Logo } from './components/logo/Logo';
+import { ExternalLink } from './components/ExternalLink';
+import { Link } from './components/Link';
 
 function App() {
-  return <AppProviders>
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Counter />
-      </header>
-    </div>
-  </AppProviders>;
+  return <div className="App">
+    <header className="App-header">
+      <Logo />
+      <p> Edit <code>src/App.tsx</code> and save to reload. </p>
+      <ExternalLink url="https://reactjs.org">Learn React</ExternalLink>
+      <Link url="home">Home</Link>
+      <Counter />
+    </header>
+  </div>;
 }
 
 export default App;
