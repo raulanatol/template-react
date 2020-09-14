@@ -2,15 +2,16 @@
   "name": "template-react",
   "version": "0.0.1",
   "private": true,
+  "homepage": "http://natol.es/template-react/",
   "scripts": {
     "build": "react-scripts build",
+    "clean": "shx rm -Rf build",
+    "cleanup": "shx rm -Rf build node_modules yarn.lock",
     "eject": "react-scripts eject",
+    "lint": "eslint --max-warnings 0 . --ext .ts,.tsx",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "test-ci": "cross-env CI=true react-scripts test --env=jsdom",
-    "lint": "eslint --max-warnings 0 . --ext .ts,.tsx",
-    "clean": "shx rm -Rf build",
-    "cleanup": "shx rm -Rf build node_modules yarn.lock"
+    "test-ci": "cross-env CI=true react-scripts test --env=jsdom"
   },
   "browserslist": {
     "production": [
