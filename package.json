@@ -11,7 +11,7 @@
     "lint": "eslint --max-warnings 0 . --ext .ts,.tsx",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "test-ci": "cross-env CI=true react-scripts test --env=jsdom"
+    "test-ci": "cross-env CI=true react-scripts test --env=jsdom --coverage"
   },
   "browserslist": {
     "production": [
