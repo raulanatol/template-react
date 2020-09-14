@@ -2,6 +2,9 @@
     <h1>template-react</h1>
 </div>
 
+![Build](https://github.com/raulanatol/template-react/workflows/Build/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/raulanatol/template-react/branch/main/graph/badge.svg)](https://codecov.io/gh/raulanatol/template-react)
+
 <p>📓 Template repo with cra + ts + mobx + emotion</p>
 
 ---
