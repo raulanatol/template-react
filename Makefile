@@ -12,11 +12,12 @@ check: --pre_check test build
 	@echo "✅"
 
 docs:
-	@doctoc .
+	@doctoc README.md
 	@echo "📚 Documentation ready!"
 
 clean:
 	@echo "🛁 Cleaning..."
+	@yarn clean
 
 clean_all:
 	@echo "🧨 Clean all"
