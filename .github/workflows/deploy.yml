@@ -1,0 +1,21 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Start repo
+        run: make init
+      - name: Build page
+        run: make build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.6.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          CLEAN: true
