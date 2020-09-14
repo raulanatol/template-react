@@ -20,9 +20,11 @@ clean:
 
 clean_all:
 	@echo "🧨 Clean all"
+	@yarn cleanup
 
 test:
 	@echo "Testing..."
+	@yarn test-ci
 
 build:
 	@echo "👩‍🏭 Building..."
@@ -40,7 +42,6 @@ release: check
 	@.scripts/finish-release patch
 
 --pre_check:
-	@echo "👩‍🏭 Pre-check here!"
 	@yarn clean
 	@yarn install
 	@yarn lint

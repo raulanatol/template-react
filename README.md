@@ -14,13 +14,8 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Extra configs](#extra-configs)
-    - [Typescript](#typescript)
-    - [React](#react)
-- [LICENSE](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 
 ## Installation
 
@@ -32,4 +27,16 @@ make init
 
 ```shell script
 make start
+```
+
+## Tests
+
+```shell script
+make test
+```
+
+## Check code
+
+```shell script
+make
 ```

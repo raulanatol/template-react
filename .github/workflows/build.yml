@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        run: make start
+        run: make init
       - name: Check
         run: make
       - name: Build

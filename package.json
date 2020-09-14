@@ -7,8 +7,10 @@
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test",
+    "test-ci": "cross-env CI=true react-scripts test --env=jsdom",
     "lint": "eslint --max-warnings 0 . --ext .ts,.tsx",
-    "clean": "shx rm -Rf build"
+    "clean": "shx rm -Rf build",
+    "cleanup": "shx rm -Rf build node_modules yarn.lock"
   },
   "browserslist": {
     "production": [
@@ -26,6 +28,8 @@
     "extends": "@cowcoders/eslint-config/react"
   },
   "dependencies": {
+    "mobx": "^5.15.6",
+    "mobx-react": "^6.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -38,6 +42,8 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "cross-env": "^7.0.2",
+    "prettier": "^2.1.1",
     "react-scripts": "3.4.3",
     "shx": "^0.3.2",
     "typescript": "~3.7.2"
