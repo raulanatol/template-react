@@ -1,0 +1,18 @@
+name: Build
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: make start
+      - name: Check
+        run: make
+      - name: Build
+        run: make build
